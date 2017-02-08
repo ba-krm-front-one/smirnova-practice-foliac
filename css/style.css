@@ -1,0 +1,437 @@
+@font-face {
+	font-family: 'Big John';
+	src: url('../fonts/big_john-webfont.woff2') format('woff2'),
+	url('../fonts/big_john-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Slim Joe';
+	src: url('../fonts/slim_joe-webfont.woff2') format('woff2'),
+	url('../fonts/slim_joe-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	color: #ffffff;
+}
+
+.ba-header{
+	background: url("../Foliac-assets/computer.jpg") no-repeat center;
+	width: 100%;
+	height: 650px;
+}
+
+.ba-container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+
+/*блок клеарфикс очищаю после флоатов*/
+.ba-logo_menu:before,
+.ba-logo_menu:after {
+	content: "";
+	display: table;
+}
+
+.ba-logo_menu:after {
+	clear: both;
+}
+
+.ba-logo_menu {
+	*zoom: 1;
+}
+/*окончание правила клеарфикс*/
+
+.ba-logo {
+	float: left;
+	margin-top: 36px;
+}
+
+.ba-header__nav{
+	float: right;
+	margin-top: 81px;
+	width: 550px;
+	text-align: right;
+}
+
+.ba-header__nav li{
+	display: inline-block;
+	font-weight: 700;
+}
+
+
+.ba-header__nav li:not(:last-child):after{
+	content: url("../Foliac-assets/sep.png");
+    padding: 50px;
+}
+
+.ba-header__nav li a:hover{
+	color: #48bf72;
+}
+
+.ba-header__text{
+	margin-top: 157px;
+	margin-bottom: 49px;
+	text-transform: uppercase;
+}
+
+.ba-header__text h1{
+	font-family: 'Big John', sans-serif;
+	font-size: 46px;
+	margin: 0 auto 28px;
+}
+
+.ba-header__text h3{
+	font-size: 30px;
+	font-family: 'Slim Joe', sans-serif;
+}
+
+.ba-button--border{
+	height: 39px;
+	background: none;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	outline: none; /* убирать контур */
+	border-radius: 2px;
+	border: solid 2px;
+	padding: 0 21px;
+}
+
+.ba-button__travaux{
+	border-color: #48bf72;
+	color: #48bf72;
+}
+
+.ba-button__travaux:hover{
+	border-color: #48bf72;
+	color: #ffffff;
+	background: #48bf72;
+}
+
+
+.ba-portfolio__nav{
+	margin-top: 91px;
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.ba-portfolio__nav li{
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #3c4955;
+	margin: 0 7px;
+}
+
+.ba-portfolio__nav-button {
+	height: 32px;
+	background-color: #eaeaea;
+	outline: none;
+	border-radius: 2px;
+	border: none;
+	padding: 0 15px;
+}
+
+.ba-portfolio__nav-button--active {
+	background-color: #48bf72;
+	color: #ffffff;
+}
+
+.ba-portfolio__nav-button:hover{
+    background-color: #3c4955;
+    color: #ffffff;
+}
+
+.ba-portfolio__table li{
+	float: left;
+	margin-bottom: 40px;
+}
+
+.ba-portfolio__table li:not(:nth-child(even)){
+	margin-right: 40px;
+}
+.ba-portfolio__img{
+    position: relative;
+}
+.ba-portfolio__img--hover{
+    position: absolute;
+    background-color: rgba(72, 191, 114, 0.8);
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.ba-portfolio__textcenter{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	width: 150px;
+	height: 55px;
+}
+.ba-portfolio__img--hover h1{
+    font-size: 30px;
+    font-weight: 700;
+	margin: 0 auto 20px;
+}
+.ba-portfolio__img--hover h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ba-portfolio__img:hover .ba-portfolio__img--hover{
+    visibility: visible;
+}
+/*Rule clearfix*/
+.ba-portfolio:before,
+.ba-portfolio:after {
+	content: "";
+	display: table;
+}
+
+.ba-portfolio:after {
+	clear: both;
+}
+
+.ba-portfolio{
+	*zoom: 1;
+}
+/*End clearfix*/
+.ba-container__about{
+	position: relative;
+}
+.ba-about{
+	height: 500px;
+	background: url("../Foliac-assets/men-computer.jpg") no-repeat center;
+	margin-top: 60px;
+}
+
+.ba-about__all{
+	position: absolute;
+	top: 85px;
+	right: 130px;
+	width: 426px;
+	height: 410px;
+	text-align: left;
+}
+
+.ba-about__text h1{
+	margin: 0 0 16px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.ba-about__text h3{
+	margin: 0 0 40px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.ba-about__text p{
+	line-height: 1.6;
+	margin-bottom: 40px;
+}
+
+.ba-button__me-contacter{
+	color: #3c4955;
+	border-color: #3c4955;
+}
+
+.ba-button__me-contacter:hover{
+	color: #ffffff;
+	border-color: #3c4955;
+	background: #3c4955;
+}
+.ba-container__contact{
+	width: 700px;
+	margin: 50px auto 55px;
+}
+.ba-contact h1{
+	color: #48bf72;
+	font-family: "Big John", sans-serif;
+	font-size: 26px;
+	line-height: 25px;
+	text-transform: uppercase;
+	margin: 50px auto 55px;
+}
+.ba-contact__button{
+	height: 50px;
+	background-color: #48bf72;
+	user-select: none;
+	outline: none;
+	border-radius: 2px;
+	border: none;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+.ba-contact__button:hover{
+    background-color: #ffffff;
+    border: 2px solid #48bf72;
+    color: #48bf72;
+}
+
+.ba-contact__input{
+	background-position: top left ;
+	border-radius: 3px;
+	border: 2px solid #3c4955;
+	background-color: #f1f1f1;
+	outline: none;
+	padding-left: 70px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
+	font-weight: 700;
+	color: #a6a5a5;
+	height: 50px;
+}
+
+.ba_contact__form--inline:before,
+.ba_contact__form--inline:after{
+	content: "";
+	display: table;
+}
+
+.ba_contact__form--inline:after{
+	clear: both;
+}
+
+.ba_contact__form--inline{
+	*zoom: 1;
+	margin-bottom: 30px;
+}
+
+.input__votre-nom{
+	background: url(../Foliac-assets/icon-user.png) no-repeat #f1f1f1;
+	background-position: 0 center;
+	width: 335px;
+	margin-right: 25px;
+	float: left;
+
+}
+
+.input__votre_email{
+	background: url(../Foliac-assets/icon-email.png) no-repeat #f1f1f1;
+	background-position: 0 center;
+	width: 335px;
+	float: right;
+}
+.textarea__votre_message{
+	background: url(../Foliac-assets/icon-message.png) no-repeat #f1f1f1;
+	background-position: 0 center;
+	width: 100%;
+	height: 228px;
+	padding-top: 15px;
+}
+
+.ba-footer{
+	width: 100%;
+	height: 201px;
+	background-color: #3c4955;
+}
+
+.ba-footer__copyright{
+	float: left;
+	margin-top: 94px;
+	font-weight: 400;
+}
+
+.ba-footer__copyright span{
+	font-weight: 700;
+}
+
+.ba-footer__icons{
+	 font-size: 0;
+}
+
+.ba-footer__icons li{
+	 float: right;
+	 margin-top: 75px;
+}
+
+.ba-footer__icons li:not(:first-child){
+	margin-right: 40px;
+}
+
+.ba-footer__icon-behance{
+    background: url(../Foliac-assets/Behance.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 49px;
+    height: 55px;
+}
+
+.ba-footer__icon-behance:hover{
+    background: url(../Foliac-assets/Behance1.png); /* Путь к файлу с исходным рисунком  */
+
+}
+
+.ba-footer__icon-dribbble{
+    background: url(../Foliac-assets/Dribbble.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 49px;
+    height: 55px;
+}
+
+.ba-footer__icon-dribbble:hover{
+    background: url(../Foliac-assets/Dribbble1.png); /* Путь к файлу с исходным рисунком  */
+
+}
+
+.ba-footer__icon-linkedin{
+    background: url(../Foliac-assets/LinkedIn.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 49px;
+    height: 55px;
+}
+
+.ba-footer__icon-linkedin:hover{
+    background: url(../Foliac-assets/LinkedIn1.png); /* Путь к файлу с исходным рисунком  */
+}
+
+.ba-footer__icon-twitter{
+    background: url(../Foliac-assets/Twitter.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 49px;
+    height: 55px;
+}
+
+.ba-footer__icon-twitter:hover{
+    background: url(../Foliac-assets/Twitter1.png); /* Путь к файлу с исходным рисунком  */
+}
+
