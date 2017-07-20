@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lato:400,700" rel="stylesheet"> <!--Подключаем шрифты-->
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="ba-header" id="accueil">
+		<div class="ba-container">
+			<div class="ba-logo_menu">
+                <div class="ba-logo">
+                    <img src="Foliac-assets/foliac-logo.png">
+                </div>
+
+                <nav>
+                    <ul class="ba-header__nav">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+			</div>
+
+            <div class="ba-header__text">
+				<h1>voici votre prochain portfolio</h1>
+				<h3>un template psd simple et gratuit </h3>
+            </div>
+
+            <div class="ba-header__button">
+				<button class="ba-button__travaux ba-button--border">mes travaux</button>
+            </div>
+
+        </div>
+	</header>
+	<section class="ba-portfolio" id="portfolio">
+		<div class="ba-container">
+			<nav>
+				<ul class="ba-portfolio__nav">
+					<li>
+						<button class="ba-portfolio__nav-button ba-portfolio__nav-button--active">Tous les projets</button>
+					</li>
+					<li>
+						<button class="ba-portfolio__nav-button">Webdesign</button>
+					</li>
+					<li>
+						<button class="ba-portfolio__nav-button">UI/UX design</button>
+					</li>
+					<li>
+						<button class="ba-portfolio__nav-button">Illustration</button>
+					</li>
+					<li>
+						<button class="ba-portfolio__nav-button">Motion design</button>
+					</li>
+				</ul>
+			</nav>
+			<div>
+
+				<ul class="ba-portfolio__table">
+					<li>
+                        <div class="ba-portfolio__img">
+
+                                <img src="Foliac-assets/multiple_items.png">
+
+                            <div class="ba-portfolio__img--hover">
+								<div class="ba-portfolio__textcenter">
+                                <h1>Forest app</h1>
+                                <h3>application mobile</h3>
+								</div>
+                            </div>
+                        </div>
+                    </li>
+					</li>
+					<li>
+						<div class="ba-portfolio__img">
+
+							<img src="Foliac-assets/prototype.png">
+
+							<div class="ba-portfolio__img--hover">
+								<div class="ba-portfolio__textcenter">
+									<h1>Forest app</h1>
+									<h3>application mobile</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ba-portfolio__img">
+
+							<img src="Foliac-assets/identité_visuelle.png">
+
+							<div class="ba-portfolio__img--hover">
+								<div class="ba-portfolio__textcenter">
+									<h1>Forest app</h1>
+									<h3>application mobile</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ba-portfolio__img">
+
+							<img src="Foliac-assets/app.png">
+
+							<div class="ba-portfolio__img--hover">
+								<div class="ba-portfolio__textcenter">
+									<h1>Forest app</h1>
+									<h3>application mobile</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+	</section>
+
+	<section class="ba-about" id="about">
+		<div class="ba-container ba-container__about">
+			<div class="ba-about__all">
+				<div class="ba-about__text">
+					<h1>Michel Dupont</h1>
+					<h3>Webdesigner, illustrateur, auteur</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</div>
+				<div class="ba-about__button">
+					<button class="ba-button__me-contacter ba-button--border">me contacter</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="ba-contact">
+		<div class="ba-container__contact">
+			<h1>Me contacter</h1>
+			<form class="ba-contact__form">
+				<div class="ba_contact__form--inline">
+					<div class="ba-contact__form">
+						<input class="ba-contact__input input__votre-nom" placeholder="Votre nom">
+					</div>
+					<div class="ba-contact__form">
+						<input class="ba-contact__input input__votre_email" placeholder="Votre email">
+					</div>
+				</div>
+				<div>
+					<textarea class="ba-contact__input textarea__votre_message" rows="6" placeholder="Votre message"></textarea>
+				</div>
+				<button class="ba-contact__button">Envoyer</button>
+			</form>
+		</div>
+	</section>
+	<footer class="ba-footer">
+		<div class="ba-container">
+			<p class="ba-footer__copyright">Copyright © 2015 by beneggen - <span>www.beneggen.fr</span></p>
+			<ul class="ba-footer__icons">
+                <li class="behance"><a href="https://www.behance.net/" class="ba-footer__icon-behance"></a></li>
+				<li class="dribble"><a href="https://dribbble.com/" class="ba-footer__icon-dribbble"></a></li>
+				<li class="linkedin"><a href="https://www.linkedin.com/" class="ba-footer__icon-linkedin"></a></li>
+				<li class="twitter"><a href="https://twitter.com/?lang=ru" class="ba-footer__icon-twitter"></a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

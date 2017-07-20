@@ -1,0 +1,1 @@
+[2017-02-07 23:29:59] layer "Copyright © 2015 by beneggen - www.beneggen.fr": Unsupported extension: fr
